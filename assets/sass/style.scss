@@ -1,0 +1,154 @@
+@import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon"; //bourbon
+@import "libs/font-awesome"; //libs scss files
+@import "libs/bootstrap"; //libs scss files
+@import "plugins/swiper"; //swiper plugin scss files
+@import "fonts/fonts"; //fonts scss files
+@import "vendors/normalize"; //normalize scss files
+@import "vendors/variables"; //variables scss files
+.main-container {
+    @include clearfix;
+    .section {
+        position: relative;
+        @include clearfix;
+        padding: 50px 0 50px;
+    }
+    #section1 {
+        background: url('../../img/pattern.png') repeat, url('../../img/1.jpg') no-repeat 50% 50%;
+        min-height: 100vh;
+    }
+    #section2 {
+        background: url('../../img/pattern.png') repeat, url('../../img/4.jpg') no-repeat 50% 50%;
+        min-height: 100vh;
+    }
+    #section3 {
+        background: #ccc;
+        min-height: 100vh;
+    }
+    .navbar-nav {
+        float: none;
+        display: inline-block;
+        margin: auto;
+        a {
+            font: {
+                family: $Title;
+                weight: bold;
+                size: 16px;
+            }
+            color: $White;
+            text-transform: uppercase;
+            padding: 25px 30px;
+            @include transition(all .2s);
+            &:hover {
+                background: $Green;
+                color: $Grey;
+            }
+        }
+    }
+    .main-text-container {
+        @include clearfix;
+        .title {
+            color: $White;
+            text-transform: uppercase;
+            span {
+                font: {
+                    family: $Text;
+                    size: 14px;
+                }
+            }
+            h3 {
+                font: {
+                    size: 42px;
+                    weight: 700;
+                }
+                margin: 0;
+            }
+        }
+        p {
+            color: $White;
+        }
+        .btn-grey {
+            font: {
+                size: 14px;
+                family: $Title;
+            }
+            text-transform: uppercase;
+            border-radius: 0;
+            background: $Grey;
+            border: none;
+            color: $White;
+            @include transition(all .2s);
+            padding: 10px 15px;
+            &:hover {
+                background: $Green;
+                color: $Grey;
+            }
+        }
+    }
+    .paragraph-container {
+        p {
+            font: {
+                size: 18px;
+                family: $Text;
+            }
+            letter-spacing: 1px;
+            margin: 18px 0;
+        }
+    }
+    .text-center {
+        text-align: center;
+    }
+    .text-section {
+        border: 1px solid $White;
+        color: $White;
+        padding: 50px;
+        p {
+            font: {
+                family: $Text;
+                size: 14px;
+            }
+            letter-spacing: .5px;
+        }
+    }
+    .section-title {
+        text-transform: uppercase;
+        font: {
+            family: $Title;
+            size: 32px;
+            weight: 700;
+        }
+        margin: 0 0 40px 0;
+        .normal {
+            font-weight: 400;
+        }
+    }
+    .vertical-center {
+        min-height: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .service {
+        .col-md-4 {
+            margin: 0 0 20px
+        }
+        .service-icon {
+            font-size: 38px;
+            h4 {
+                text-transform: uppercase;
+                font: {
+                    family: $Title;
+                    size: 18px;
+                }
+                margin: 20px 0;
+            }
+        }
+        p {
+            font: {
+                family: $Text;
+                size: 15px;
+                letter-spacing: .5px;
+            }
+            margin: 0;
+        }
+    }
+}
