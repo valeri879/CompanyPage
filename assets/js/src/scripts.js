@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var swiper = new Swiper('.swiper-container');
 
+    //partners slider initialize
     var swiper = new Swiper('.partners-slider', {
         paginationClickable: true,
         slidesPerView: 3,
@@ -15,4 +16,24 @@ $(document).ready(function() {
             }
         }
     });
+
+    //header fixed
+    function HeaderMenu() {
+        if ($(window).scrollTop() > 50) {
+            $('.navbar').addClass('active');
+            console.log('window scrolltop > 50');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 50) {
+                $('.navbar').addClass('active');
+                console.log('window scrolltop > 50');
+            } else {
+                $('.navbar').removeClass('active');
+            }
+        });
+    }
+    HeaderMenu();
+
 });
