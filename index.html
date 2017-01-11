@@ -12,44 +12,69 @@
 
     <script src="assets/js/build/libs/jquery.min.js"></script>
     <script src="assets/js/build/libs/bootstrap.min.js"></script>
+    <script src="assets/js/build/libs/bootstrap/collapse.min.js"></script>
     <script src="assets/js/build/plugins/swiper.min.js"></script>
     <script src="assets/js/build/plugins/swiper.min.js"></script>
     <script src="assets/js/build/scripts.min.js"></script>
     <script async src="https://www.youtube.com/iframe_api"></script>
 
-    <title>Document</title>
+    <title>Company</title>
 </head>
 
 <body>
 
     <div class="main-container">
         <div class="section" id="section1">
-
-            <div class="navbar-header">
+            <div class="navbar navbar-fixed-top">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-            </button>
-                    <a class="navbar-brand" href="#">Project name</a>
+                    <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse" role="navigation">
+                    <div class="container-fluid text-center">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">service</a></li>
+                            <li><a href="#">membership</a></li>
+                            <li><a href="#">staff</a></li>
+                            <li><a href="#">gallery</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <nav id="navbar" class="navbar navbar-collapse collapse navbar-fixed-top" role="navigation">
-                <div class="container-fluid text-center">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">service</a></li>
-                        <li><a href="#">membership</a></li>
-                        <li><a href="#">staff</a></li>
-                        <li><a href="#">gallery</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
+            <div class="main-slider">
+                <div class="main-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('assets/img/2.jpg')">
+                            <div class="container info vertical-center align-center">
+                                <div class="center">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nam ducimus repellat quo, dicta laborum, veritatis iusto per</p>
+                                    <h1>
+                                        Lorem Ipsum Dolor Sit Amet
+                                    </h1>
+                                    <div class="row">
+                                        <button class="btn">see more</button>
+                                        <button class="btn">see more</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('assets/img/3.jpg')"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-            </nav>
-            <div class="navbar"></div>
-            <div class="container">
-
             </div>
-
         </div>
         <div class="section vertical-center" id="section2">
             <div class="text-section container">
@@ -82,7 +107,7 @@
             <div class="container service text-center">
                 <h1 class="section-title">service</h1>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-icon"><i class="fa fa-paint-brush"></i>
                             <h4>design</h4>
                         </div>
@@ -90,7 +115,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus ratione, assumenda dolor numquam, inventore sit quidem voluptas illum! Repellat quidem voluptatibus corrupti, perferendis eos sequi repellendus earum labore iste!
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-icon"><i class="fa fa-gear"></i>
                             <h4>development</h4>
                         </div>
@@ -98,7 +123,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus ratione, assumenda dolor numquam, inventore sit quidem voluptas illum! Repellat quidem voluptatibus corrupti, perferendis eos sequi repellendus earum labore iste!
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-icon"><i class="fa fa-line-chart"></i>
                             <h4>social marketing</h4>
                         </div>
@@ -106,9 +131,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus ratione, assumenda dolor numquam, inventore sit quidem voluptas
                         </p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-icon"><i class="fa fa-shopping-cart"></i>
                             <h4>e-commerce</h4>
                         </div>
@@ -116,7 +139,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus ratione, assumenda dolor numquam, inventore sit quidem voluptas illum! Repellat quidem voluptatibus corrupti, perferendis eos sequi repellendus earum labore iste!
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-icon"><i class="fa fa-life-saver"></i>
                             <h4>Multimedia Solutions</h4>
                         </div>
@@ -124,7 +147,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus ratione, assumendanventore sit quidem voluptas illum! Repellat quidem voluptatibus corrupti, perferendis eos sequi repellendus earum labore iste!
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-icon"><i class="fa fa-cogs"></i>
                             <h4>Software development</h4>
                         </div>
@@ -135,9 +158,398 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="users-section" id="section4">
+            <div class="col-md-6 personal align-center">
+                <div class="container-fluid">
+                    <h3>are you personal user</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, illo, non! Odit error exercitationem sequi perferendis. Repellat totam dicta itaque dignissimos id, dolorem aperiam esse, corrupti corporis eligendi, vero ullam?
+                    </p>
+                    <button class="btn btn-default">Click Here</button>
+                </div>
 
+            </div>
+            <div class="col-md-6 company align-center">
+                <div class="container-fluid">
+                    <h3>are you personal user</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, illo, non! Odit error exercitationem sequi perferendis. Repellat totam dicta itaque dignissimos id, dolorem aperiam esse, corrupti corporis eligendi, vero ullam?
+                    </p>
+                    <button class="btn btn-default">Click Here</button>
+                </div>
+            </div>
+        </div>
+        <div class="section benefits" id="section6">
+            <div class="container-fluid">
+                <div class="title">
+                    <h1 class="align-center">benefits for user!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div>
+            </div>
 
+            <div class="container">
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon col-md-2 col-sm-1"><i class="fa fa-gear"></i></div>
+                        <div class="col-md-10 col-sm-11">
+                            <div class="title-benefit">Shipping coast</div>
+                            <p class="p-benefit">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="icon col-md-2 col-sm-1"><i class="fa fa-thumbs-up"></i></div>
+                        <div class="col-md-10 col-sm-11">
+                            <div class="title-benefit">Trustable</div>
+                            <p class="p-benefit">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="icon col-md-2 col-sm-1"><i class="fa fa-headphones"></i></div>
+                        <div class="col-md-10 col-sm-11">
+                            <div class="title-benefit">Support</div>
+                            <p class="p-benefit">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="phone" src="assets/img/iphone.png" alt="">
+                </div>
+                <div class="col-md-4  align-right">
+                    <div class="info">
+                        <div class="col-md-10 col-sm-11">
+                            <div class="title-benefit">enjoy discounts</div>
+                            <p class="p-benefit">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="icon col-md-2 col-sm-1"><i class="fa fa-gear"></i></div>
+                    </div>
+                    <div class="info">
+                        <div class="col-md-10 col-sm-11">
+                            <div class="title-benefit">earn rewards</div>
+                            <p class="p-benefit">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="icon col-md-2 col-sm-1"><i class="fa fa-thumbs-up"></i></div>
+                    </div>
+                    <div class="info">
+                        <div class="col-md-10 col-sm-11">
+                            <div class="title-benefit">user friendly</div>
+                            <p class="p-benefit">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="icon col-md-2 col-sm-1"><i class="fa fa-headphones"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="square"></div>
+        </div>
+        <div class="section misson align-center">
+            <div class="square"></div>
+            <div class="container">
+                <h1 class="title">
+                    our goal and misson
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis obcaecati odit hic id ut culpa eos autem inventore eaque rem quasi earum itaque vero officiis voluptates illum animi, consequuntur, rerum!
+                </p>
+            </div>
+        </div>
+        <div class="section quotes align-center">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <figure><img class="profile-image" src="assets/img/profile.jpg" alt="profile"></figure>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, a ex dolor labore in quisquam! Eum ullam mollitia natus sint soluta et quia pariatur quam dicta, aut adipisci expedita. Unde.
+                            </p>
+                            <div class="name">val kharitonashvili</div>
+                            <div class="organisation">CEO founder at <a href="#">starlab ltd</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section partners align-center">
+            <div class="container">
+                <div class="title">
+                    our partners & clients
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="swiper-container partners-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="assets/img/cnn.png" alt="logo">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur sapiente temporibus ducimus.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="assets/img/tnt.png" alt="logo">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur sapiente temporibus ducimus.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="assets/img/tnw.png" alt="logo">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur sapiente temporibus ducimus.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section gallery">
+            <div class="col-md-6 green">
+                <div class="container-fluid">
+                    <div class="title">
+                        our office
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, vitae, hic? Atque cum eligendi non doloremque, ducimus, corporis quaerat quidem ratione quisquam minus, qui sed rerum. Unde ab eos cumque.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 slider">
+                <div class="row">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('assets/img/1.jpg')">Slide 1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section faq">
+            <div class="container">
+                <div class="title align-center">
+                    forum
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, hic!
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="accordion">
+                            <div class="question">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, tempora ?
+                                <i class="fa fa-plus align-right"></i>
+                            </div>
+                            <div class="answer collapse">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis autem consequatur eum adipisci dolorum minus quam magnam nulla.
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="question" data-toggle="collapse" data-target="#demo">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, tempora ?
+                                <i class="fa fa-plus align-right"></i>
+                            </div>
+                            <div id="demo" class="answer collapse">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis autem consequatur eum adipisci dolorum minus quam magnam nulla.
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="question">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, tempora ?
+                                <i class="fa fa-plus align-right"></i>
+                            </div>
+                            <div class="answer collapse">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis autem consequatur eum adipisci dolorum minus quam magnam nulla.
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="question">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, tempora ?
+                                <i class="fa fa-plus align-right"></i>
+                            </div>
+                            <div class="answer collapse">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis autem consequatur eum adipisci dolorum minus quam magnam nulla.
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="question">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, tempora ?
+                                <i class="fa fa-plus align-right"></i>
+                            </div>
+                            <div class="answer collapse">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis autem consequatur eum adipisci dolorum minus quam magnam nulla.
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="question">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, tempora ?
+                                <i class="fa fa-plus align-right"></i>
+                            </div>
+                            <div class="answer collapse">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis autem consequatur eum adipisci dolorum minus quam magnam nulla.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="large-infos">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-1">
+                                    <i class="fa fa-info"></i>
+                                </div>
+                                <div class="col-md-10 col-sm-11">
+                                    <h1>Lorem ipsum dolor sit.</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-infos">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-1">
+                                    <i class="fa fa-gear"></i>
+                                </div>
+                                <div class="col-md-10 col-sm-11">
+                                    <h1>Lorem ipsum dolor sit.</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-infos">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-1">
+                                    <i class="fa fa-car"></i>
+                                </div>
+                                <div class="col-md-10 col-sm-11">
+                                    <h1>Lorem ipsum dolor sit.</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section contact">
+            <div class="container">
+                <div class="row info">
+                    <div class="col-md-4 col-sm-4">
+                        <i class="fa fa-phone"></i>
+                        <span>+15 5498 484 4</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <i class="fa fa-skype"> </i>
+                        <span>Donadelo</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <i class="fa fa-envelope"></i>
+                        <span>our.mail@email.com</span>
+                    </div>
+                </div>
+                <div class="row align-center">
+                    <div class="title">
+                        say hello!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="6" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group align-center">
+                        <button class="btn">contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="title">Your Company</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime inventore natus excepturi incidunt deserunt. Lorem ipsum dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque placeat ipsum modi!</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><b>home</b></a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">membership</a></li>
+                                    <li><a href="#">staff</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><b>forum</b></a></li>
+                                    <li><a href="#">questions</a></li>
+                                    <li><a href="#">info</a></li>
+                                    <li><a href="#">membership</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><b>service</b></a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">membership</a></li>
+                                    <li><a href="#">staff</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="line"></div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6 social">
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-google"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-medium"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 align-right">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+            </div>
+
+        </footer>
     </div>
 
 

@@ -2,15 +2,18 @@
 @import "libs/font-awesome"; //libs scss files
 @import "libs/bootstrap"; //libs scss files
 @import "plugins/swiper"; //swiper plugin scss files
+@import "plugins/button"; //swiper plugin scss files
 @import "fonts/fonts"; //fonts scss files
 @import "vendors/normalize"; //normalize scss files
 @import "vendors/variables"; //variables scss files
 .main-container {
+    position: relative;
     @include clearfix;
     .section {
         position: relative;
         @include clearfix;
-        padding: 50px 0 50px;
+        padding: 100px 0;
+        box-sizing: border-box;
     }
     #section1 {
         background: url('../../img/pattern.png') repeat, url('../../img/1.jpg') no-repeat 50% 50%;
@@ -19,10 +22,449 @@
     #section2 {
         background: url('../../img/pattern.png') repeat, url('../../img/4.jpg') no-repeat 50% 50%;
         min-height: 100vh;
+        background-position: 0, 50% 50%;
+        background-size: auto, cover;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, .4);
+            width: 100%;
+            height: 100%;
+            display: block;
+            z-index: -1;
+        }
     }
     #section3 {
         background: #ccc;
         min-height: 100vh;
+    }
+    #section6 {
+        background: $Grey;
+    }
+    .benefits {
+        position: relative;
+        color: $Green;
+        min-height: 100vh;
+        .phone {
+            width: 100%;
+        }
+        .info {
+            @include clearfix;
+            margin: 60px 0;
+        }
+        .icon {
+            position: relative;
+            font-size: 30px;
+            text-align: center;
+            height: 50px;
+            vertical-align: middle;
+        }
+        .title-benefit {
+            text-transform: capitalize;
+            font: {
+                family: $Title;
+                size: 18px;
+            }
+        }
+        .p-benefit {
+            font: {
+                family: $Text;
+                size: 14px;
+            }
+            color: #ccc;
+        }
+        .title {
+            margin: 80px 0 50px;
+            text-align: center;
+            h1 {
+                font: {
+                    family: $Title;
+                    size: 28px;
+                }
+                text-transform: uppercase;
+            }
+            p {
+                font: {
+                    family: $Text;
+                    size: 14px;
+                }
+            }
+        }
+        .square {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: $Green;
+            left: 50%;
+            bottom: 0;
+            margin: 0 0 0 -25px;
+        }
+    }
+    .misson {
+        background: $Green;
+        .square {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: $Grey;
+            left: 50%;
+            top: 0;
+            margin: 0 0 0 -25px;
+        }
+        .title {
+            margin: auto;
+            font: {
+                family: $Title;
+                size: 28px;
+            }
+            color: $Grey;
+            text-transform: capitalize;
+            margin: 50px 0 20px
+        }
+        p {
+            font: {
+                family: $Text;
+                size: 14px;
+            }
+        }
+    }
+    .quotes {
+        position: relative;
+        background: url('../../img/pattern.png') repeat, url('../../img/1.jpg') repeat;
+        background-size: auto, cover;
+        background-position: 50% 50%;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: block;
+            background: rgba(0, 0, 0, .5);
+        }
+        .profile-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            border: 2px solid $Green;
+        }
+        p {
+            color: #fff;
+            font: {
+                family: $Text;
+                size: 14px;
+            }
+            margin: 40px 0;
+        }
+        .name {
+            font: {
+                family: $Title;
+                size: 14px;
+            }
+            text-transform: capitalize;
+            color: $Green;
+        }
+        .organisation {
+            font: {
+                family: $Text;
+                size: 14px;
+            }
+            color: #fff;
+            text-transform: lowercase;
+            a {
+                color: $Green;
+            }
+        }
+    }
+    .title {
+        margin: auto;
+        font: {
+            family: $Title;
+            size: 28px;
+        }
+        text-transform: capitalize;
+        margin: 50px 0 70px;
+        color: $Green;
+        p {
+            font: {
+                family: $Text;
+                size: 14px;
+            }
+        }
+    }
+    .partners {
+        background: $Grey;
+        .title {
+            margin: auto;
+            font: {
+                family: $Title;
+                size: 28px;
+            }
+            text-transform: capitalize;
+            margin: 50px 0 70px;
+            color: $Green;
+            p {
+                font: {
+                    family: $Text;
+                    size: 14px;
+                }
+            }
+        }
+        &-slider {
+            color: #fff;
+            p {
+                color: #555;
+                margin: 20px;
+            }
+            .swiper-slide:nth-child(even) {
+                p {
+                    color: #ccc;
+                }
+            }
+        }
+        figure {
+            margin: 0;
+            height: 55px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img {
+            margin: auto;
+            width: 50px;
+        }
+    }
+    .gallery {
+        padding: 0;
+        height: 245px;
+        .green {
+            background: $Green;
+            padding: 50px;
+            height: 245px;
+        }
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+        .title {
+            margin: auto;
+            font: {
+                family: $Title;
+                size: 28px;
+            }
+            color: $Grey;
+            text-transform: capitalize;
+            margin: 10px 0;
+            p {
+                font: {
+                    family: $Text;
+                    size: 14px;
+                }
+            }
+        }
+        .slider {
+            height: 100%;
+        }
+        .swiper-container {
+            height: 245px;
+        }
+    }
+    .faq {
+        background: $Grey;
+        .accordion {
+            background: #171717;
+            padding: 15px 20px;
+            color: #7b7b7b;
+            border-radius: 4px;
+            margin: 15px 0;
+            cursor: pointer;
+            .fa {
+                color: $Green;
+                float: right;
+                margin: 4px;
+                font-size: 14px;
+            }
+        }
+        .large-infos {
+            border: 1px solid $Green;
+            background: #171717;
+            border-radius: 3px;
+            padding: 25px 15px;
+            margin: 15px 0;
+            h1 {
+                font: {
+                    family: $Title;
+                    size: 20px;
+                }
+                margin: 0;
+                color: $Green;
+            }
+            p {
+                font: {
+                    family: $Text;
+                    size: 14px;
+                }
+                color: #ccc;
+                margin: 0;
+            }
+            .fa {
+                width: 40px;
+                height: 40px;
+                background: $Green;
+                text-align: center;
+                border-radius: 100%;
+                padding: 13px 0 0;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    .contact {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../img/pattern.png'), url('../../img/3.jpg');
+        background-size: auto, cover;
+        background-position: 0, 50% 50%;
+        background-repeat: repeat, no-repeat;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            display: block;
+        }
+        .info {
+            .fa {
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                border: 1px solid $Green;
+                text-align: center;
+                padding: 10px 0;
+                font-size: 18px;
+            }
+            span {
+                color: $Green;
+                display: inline-block;
+                margin: 0 0 0 10px;
+            }
+        }
+        .form-control {
+            background: transparent;
+            border: 1px solid #444;
+            padding: 20px 12px;
+            border-radius: 3px;
+            color: $Green;
+            box-shadow: none;
+            &:focus {
+                border-color: $Green;
+                box-shadow: none;
+            }
+        }
+    }
+    footer {
+        background: $Green;
+        padding: 50px 0 0 !important;
+        .title {
+            color: $Grey;
+            margin: 0;
+        }
+        a {
+            color: $Grey;
+        }
+        b {
+            font: {
+                family: $Title;
+                size: 16px;
+            }
+            margin: 0 0 10px;
+            display: block;
+            text-transform: uppercase;
+        }
+        .line {
+            width: 100%;
+            height: 1px;
+            background: $Grey;
+            margin: 0 0 10px;
+        }
+        .copyright {
+            padding: 20px 15px;
+            .row {
+                padding: 15px 0;
+            }
+        }
+        .social {
+            .fa {
+                width: 20px;
+                height: 20px;
+                background: $Grey;
+                color: $Green;
+                text-align: center;
+                padding: 5px 0;
+                border-radius: 100%;
+                margin: 0 5px 0 0;
+                font-size: 10px;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .users-section {
+        @include clearfix;
+        position: relative;
+        .col-md-6 {
+            padding: 70px 30px;
+        }
+        .company {
+            background: rgba(0, 0, 0, 0.5) url('../../img/5.jpg');
+            background-size: cover;
+            color: $White;
+        }
+        .personal {
+            background: $Green;
+            .btn {
+                border-color: $Grey;
+            }
+        }
+        h3 {
+            text-transform: capitalize;
+            font: {
+                family: $Title;
+                size: 18px;
+            }
+        }
+        p {
+            font: {
+                family: $Text;
+                size: 14px;
+            }
+            margin: 20px 0;
+        }
+    }
+    .menu-button {
+        background: #fff;
+        .icon-bar {
+            background: #ccc;
+        }
+    }
+    .align-center {
+        text-align: center;
     }
     .navbar-nav {
         float: none;
@@ -149,6 +591,49 @@
                 letter-spacing: .5px;
             }
             margin: 0;
+        }
+    }
+}
+
+.main-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+        position: relative;
+        background-position: 50% 50%;
+        background-size: cover;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5) url('../../img/pattern.png')
+        }
+        .info {
+            position: relative;
+            color: #fff;
+            z-index: 1;
+            text-align: center;
+            p {
+                width: 100%;
+                display: block;
+                font: {
+                    family: $Text;
+                }
+                margin: 0 auto;
+            }
+            h1 {
+                width: 100%;
+                display: block;
+            }
+        }
+        .center {
+            margin: auto;
         }
     }
 }

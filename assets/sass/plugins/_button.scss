@@ -1,0 +1,20 @@
+@import "vendors/variables"; //variables scss files
+.btn {
+    background: $Green;
+    color: #000;
+    text-transform: uppercase;
+    font: {
+        family: $Title;
+        size: 14px;
+    }
+    border-radius: 0;
+    border: 2px;
+    border-style: solid;
+    border-color: $Green;
+    @include transition(all .2s);
+    &:hover {
+        border-color: $Green;
+        background: $Grey;
+        color: #fff;
+    }
+}
